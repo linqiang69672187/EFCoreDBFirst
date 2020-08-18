@@ -5,6 +5,7 @@ namespace EFCoreDBFirst.Models
 {
     public partial class IsInStockadeView
     {
+        public Guid Id { get; set; }
         public string PointArray { get; set; }
         public decimal? Latitude { get; set; }
         public decimal? Longitude { get; set; }

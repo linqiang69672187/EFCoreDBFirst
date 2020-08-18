@@ -29,7 +29,7 @@ namespace EFCoreDBFirst
         {
             services.AddDbContext<DagdbContext>(config =>
             {
-                config.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+                config.UseMySQL(Configuration.GetConnectionString("mysql"));
             });
             services.AddControllers();
         }

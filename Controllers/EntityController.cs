@@ -23,5 +23,11 @@ namespace EFCoreDBFirst.Controllers
         {
             return dataContext.Entity.ToList();
         }
+
+        [HttpGet("{id}")]
+        public int GetAuthorsid(int id)
+        {
+            return id;
+        }
     }
 }
